@@ -22,6 +22,12 @@ body {
 .product-card {
     border: 1px solid rgba(13, 110, 253, 0.12) !important;
     overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 28px rgba(11, 47, 75, 0.14);
 }
 
 .product-card img {
@@ -29,6 +35,22 @@ body {
     height: 220px;
     object-fit: cover;
     border-radius: 0;
+}
+
+.product-card .card-body {
+    padding: 1.25rem;
+}
+
+.product-card .card-title {
+    color: var(--logo-dark);
+    font-weight: 800;
+}
+
+.product-card .card-title strong {
+    display: block;
+    color: var(--logo-blue);
+    font-size: 1.15rem;
+    margin-top: 0.5rem;
 }
 
 .T_01 {
